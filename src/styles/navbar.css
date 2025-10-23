@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap");
+
+.navbar {
+  background-color: blueviolet;
+  font-family: "Mystery Quest", system-ui;
+  font-weight: bold;
+  background: linear-gradient(to bottom, blueviolet, #2b0435);
+
+  box-shadow: 0 4px 10px rgba(134, 16, 167, 0.4),
+    inset 0 2px 6px rgba(143, 14, 145, 0.2);
+
+  border-bottom: 1px solid rgba(221, 0, 255, 0.3);
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand,
+.navbar .navbar-toggler {
+  color: #f16b1d !important;
+  font-size: x-large;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand span,
+.navbar .navbar-toggler {
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand span:hover,
+.navbar .navbar-toggler:hover {
+  transform: scale(1.1) rotate(-3deg);
+  color: #ff7518 !important;
+  text-shadow: 0 0 5px #ff7518;
+}
+
+.navbar-center-decoration img,
+.navbar-right-decoration img {
+  filter: drop-shadow(0 0 6px orange);
+  transition: transform 0.3s ease;
+}
+
+.navbar-center-decoration img:hover,
+.navbar-right-decoration img:hover {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.navbar-center-decoration {
+  position: absolute;
+  left: 60%;
+  transform: translateX(-50%);
+  top: -46px;
+  z-index: 1;
+}
+
+.navbar-center-decoration img {
+  filter: drop-shadow(0 0 6px orange);
+  transition: transform 0.3s ease;
+}
+
+.navbar-center-decoration img:hover {
+  transform: scale(1.1) rotate(-3deg);
+}
