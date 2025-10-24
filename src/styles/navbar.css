@@ -51,7 +51,7 @@
 
 .navbar-center-decoration {
   position: absolute;
-  left: 60%;
+  left: 46%;
   transform: translateX(-50%);
   top: -46px;
   z-index: 1;
@@ -64,4 +64,8 @@
 
 .navbar-center-decoration img:hover {
   transform: scale(1.1) rotate(-3deg);
+}
+
+.navbar .nav-link {
+  cursor: pointer;
 }

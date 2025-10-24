@@ -1,9 +1,13 @@
 import MyNav from "./components/MyNav"
+import SpiritBoard from "./components/SpiritBoard"
 
 function App() {
   return (
     <>
-      <MyNav />
+      <div className="mt-5">
+        <MyNav />
+      </div>
+      <SpiritBoard />
     </>
   )
 }
