@@ -8,31 +8,116 @@
 }
 
 .spiritboard {
-  background-image: url("/tavola.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   width: 100%;
-  max-width: 90vw;
+  max-width: 1100px;
   aspect-ratio: 1 / 1;
-  min-height: 300px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.spiritboard-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.symbol-img1 {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  top: 28%;
+  left: 67%;
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease;
+}
+
+.clicked {
+  animation: horror-click 0.6s ease;
+}
+
+@keyframes horror-click {
+  0% {
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+  20% {
+    transform: scale(1.1) rotate(2deg);
+    filter: brightness(1.5) drop-shadow(0 0 10px red);
+  }
+  40% {
+    transform: scale(0.95) rotate(-2deg);
+    filter: brightness(0.8);
+  }
+  60% {
+    transform: scale(1.05) rotate(1deg);
+    filter: brightness(1.2) drop-shadow(0 0 15px crimson);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+}
+
+/* Pipistrelli */
+.bats {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.bat {
+  position: absolute;
+  width: 40px;
+  opacity: 0;
+}
+
+.bat1 {
+  top: 60%;
+  left: 50%;
+}
+
+.bat2 {
+  top: 65%;
+  left: 55%;
+}
+
+.fly {
+  animation: fly 2s ease-in-out forwards;
+}
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-300px, -200px) scale(1.5) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+/* Mobile fix */
 @media (max-width: 576px) {
   .spiritboard {
+    width: 100vw;
     max-width: 100vw;
     aspect-ratio: 1 / 1;
-    min-height: 300px;
   }
 
   .spiritboard-img {
     width: 100%;
     max-width: 100vw;
-  }
-
-  .overlay {
-    padding: 0, 7rem;
-    gap: 0.2rem;
   }
 }
