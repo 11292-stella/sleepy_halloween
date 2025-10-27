@@ -1,0 +1,14 @@
+[
+  {
+    "id": "symbol1",
+    "title": "Pozione della Luna",
+    "description": "Risveglia i sogni e illumina le ombre.",
+    "image": "/sfondo.png"
+  },
+  {
+    "id": "symbol2",
+    "title": "Occhio del Corvo",
+    "description": "Vede ciò che è nascosto.",
+    "image": "/cards/raven-eye.png"
+  }
+]

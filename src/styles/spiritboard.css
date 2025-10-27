@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 .page-background {
   background-image: url("/sfondo.png");
   background-size: cover;
@@ -7,11 +9,56 @@
   image-rendering: optimizeQuality;
 }
 
+.spooky-title {
+  font-family: "Creepster", system-ui;
+  font-size: 2.8rem;
+  color: #f16b1d;
+  text-shadow: 0 0 10px black, 0 0 20px #f16b1d, 2px 2px 4px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
+  margin-bottom: 0.4rem;
+  margin-top: 1rem;
+  animation: flicker 2s infinite;
+  text-align: center;
+}
+
+.spooky-subtitle {
+  font-family: "Mystery Quest", system-ui;
+  font-size: 1.2rem;
+  color: #f16b1d;
+  font-weight: bold;
+  text-shadow: 0 0 6px black;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+  animation: flicker 2s infinite;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@keyframes flicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  55% {
+    opacity: 0.85;
+  }
+  60% {
+    opacity: 0.95;
+  }
+}
+
 .spiritboard {
   width: 100%;
-  max-width: 1100px;
-  aspect-ratio: 1 / 1;
+  max-width: 900px;
   position: relative;
+  margin: 1.5rem auto 2rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,15 +71,279 @@
 }
 
 .symbol-img1 {
-  width: 80px;
-  height: auto;
+  width: 75px;
   position: absolute;
-  top: 28%;
-  left: 67%;
+  top: 19%;
+  left: 59%;
+}
+
+.symbol-img2 {
+  width: 75px;
+  position: absolute;
+  top: 19%;
+  left: 59%;
+}
+.symbol-img3 {
+  width: 75px;
+  position: absolute;
+  top: 19%;
+  left: 50%;
+}
+.symbol-img4 {
+  width: 75px;
+  position: absolute;
+  top: 19%;
+  left: 41%;
+}
+.symbol-img5 {
+  width: 75px;
+  position: absolute;
+  top: 19%;
+  left: 32%;
+}
+.symbol-img6 {
+  width: 75px;
+  position: absolute;
+  top: 19%;
+  left: 23%;
+}
+.symbol-img7 {
+  width: 75px;
+  position: absolute;
+  top: 32%;
+  left: 15%;
+}
+.symbol-img8 {
+  width: 75px;
+  position: absolute;
+  top: 32%;
+  left: 24%;
+}
+.symbol-img9 {
+  width: 75px;
+  position: absolute;
+  top: 32%;
+  left: 33%;
+}
+.symbol-img10 {
+  width: 75px;
+  position: absolute;
+  top: 32%;
+  left: 42%;
+}
+.symbol-img11 {
+  width: 75px;
+  position: absolute;
+  top: 32%;
+  left: 51%;
+}
+.symbol-img12 {
+  width: 75px;
+  position: absolute;
+  top: 32%;
+  left: 60%;
+}
+.symbol-img13 {
+  width: 75px;
+  position: absolute;
+  top: 32%;
+  left: 69%;
+}
+.symbol-img14 {
+  width: 75px;
+  position: absolute;
+  top: 45%;
+  left: 75%;
+}
+.symbol-img15 {
+  width: 75px;
+  position: absolute;
+  top: 45%;
+  left: 66%;
+}
+.symbol-img16 {
+  width: 75px;
+  position: absolute;
+  top: 45%;
+  left: 57%;
+}
+.symbol-img17 {
+  width: 75px;
+  position: absolute;
+  top: 45%;
+  left: 48%;
+}
+
+/* Stili comuni */
+[class^="symbol-img"] {
   z-index: 2;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   transition: transform 0.2s ease;
+}
+[class^="symbol-img"]:hover {
+  transform: scale(1.1);
+}
+
+/* --- TABLET (≤ 992px) --- */
+@media (max-width: 992px) {
+  [class^="symbol-img"] {
+    width: 55px;
+  }
+
+  .symbol-img1 {
+    top: 18%;
+    left: 70%;
+  }
+  .symbol-img2 {
+    top: 19%;
+    left: 60%;
+  }
+  .symbol-img3 {
+    top: 18%;
+    left: 50%;
+  }
+  .symbol-img4 {
+    top: 18%;
+    left: 40%;
+  }
+  .symbol-img5 {
+    top: 18%;
+    left: 30%;
+  }
+  .symbol-img6 {
+    top: 18%;
+    left: 20%;
+  }
+  .symbol-img7 {
+    top: 30%;
+    left: 15%;
+  }
+  .symbol-img8 {
+    top: 30%;
+    left: 25%;
+  }
+  .symbol-img9 {
+    top: 30%;
+    left: 35%;
+  }
+  .symbol-img10 {
+    top: 30%;
+    left: 45%;
+  }
+  .symbol-img11 {
+    top: 30%;
+    left: 55%;
+  }
+  .symbol-img12 {
+    top: 30%;
+    left: 65%;
+  }
+  .symbol-img13 {
+    top: 30%;
+    left: 75%;
+  }
+  .symbol-img14 {
+    top: 44%;
+    left: 70%;
+  }
+  .symbol-img15 {
+    top: 44%;
+    left: 60%;
+  }
+  .symbol-img16 {
+    top: 44%;
+    left: 50%;
+  }
+  .symbol-img17 {
+    top: 44%;
+    left: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  [class^="symbol-img"] {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+  }
+
+  /* Riga superiore (più vicina al bordo alto della tavola) */
+  .symbol-img1 {
+    top: 16%;
+    left: 18%;
+  }
+  .symbol-img2 {
+    top: 16%;
+    left: 29%;
+  }
+  .symbol-img3 {
+    top: 16%;
+    left: 41%;
+  }
+  .symbol-img4 {
+    top: 16%;
+    left: 53%;
+  }
+  .symbol-img5 {
+    top: 16%;
+    left: 66%;
+  }
+  .symbol-img6 {
+    top: 33%;
+    left: 10%;
+  }
+
+  .symbol-img8 {
+    top: 33%;
+    left: 22%;
+  }
+  .symbol-img7 {
+    top: 51%;
+    left: 15%;
+  }
+
+  .symbol-img9 {
+    top: 33%;
+    left: 34%;
+  }
+  .symbol-img10 {
+    top: 33%;
+    left: 46%;
+  }
+  .symbol-img11 {
+    top: 33%;
+    left: 58%;
+  }
+
+  /* Riga centrale bassa */
+  .symbol-img12 {
+    top: 33%;
+    left: 70%;
+  }
+  .symbol-img13 {
+    top: 41%;
+    left: 38%;
+  }
+  .symbol-img14 {
+    top: 51%;
+    left: 33%;
+  }
+  .symbol-img15 {
+    top: 41%;
+    left: 70%;
+  }
+
+  /* Riga inferiore */
+  .symbol-img16 {
+    top: 56%;
+    left: 40%;
+  }
+  .symbol-img17 {
+    top: 56%;
+    left: 58%;
+  }
 }
 
 .clicked {
@@ -76,7 +387,7 @@
 
 .bat {
   position: absolute;
-  width: 40px;
+  width: 50px;
   opacity: 0;
 }
 
@@ -84,14 +395,17 @@
   top: 60%;
   left: 50%;
 }
-
 .bat2 {
-  top: 65%;
+  top: 57%;
   left: 55%;
+}
+.bat3 {
+  top: 57%;
+  left: 45%;
 }
 
 .fly {
-  animation: fly 2s ease-in-out forwards;
+  animation: fly 3s ease-in-out forwards;
 }
 
 @keyframes fly {
@@ -108,16 +422,76 @@
   }
 }
 
+/* Card */
+.card.bg-dark {
+  background-image: url("/sf.jpg");
+  background-size: cover;
+  box-shadow: 0 0 20px rgba(49, 2, 75, 0.6);
+  animation: fadeIn 0.5s ease;
+}
+
+.card-title {
+  font-family: "Creepster", cursive;
+  font-size: 1.4rem;
+  color: crimson;
+  text-shadow: 0 0 5px black;
+}
+
+.card-text {
+  font-family: "Spectral", serif;
+  font-size: 0.95rem;
+  color: #eee;
+}
+
+.btn-outline-light:hover {
+  background-color: rgb(80, 8, 118);
+  color: white;
+  border-color: rgb(70, 3, 95);
+}
+
+.spirit-card-overlay {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.spirit-card-overlay .card {
+  width: 20rem;
+  pointer-events: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Mobile fix */
 @media (max-width: 576px) {
+  .spooky-title {
+    font-size: 2.1rem;
+  }
+  .spooky-subtitle {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
   .spiritboard {
-    width: 100vw;
-    max-width: 100vw;
-    aspect-ratio: 1 / 1;
+    width: 95vw;
+    margin: 1rem auto;
   }
 
-  .spiritboard-img {
-    width: 100%;
-    max-width: 100vw;
+  .spirit-card-overlay {
+    top: 63%;
   }
 }
