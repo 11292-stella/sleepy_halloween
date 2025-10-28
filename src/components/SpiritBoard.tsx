@@ -14,7 +14,7 @@ const SpiritBoard = function () {
 
   const [activeCard, setActiveCard] = useState<Card | null>(null)
 
-  const handleClick = () => {
+  const handleClick = (symbolId: string) => {
     setClicked(true)
     setTimeout(() => setClicked(false), 600)
 
@@ -22,7 +22,8 @@ const SpiritBoard = function () {
     if (sound) sound.play()
 
     triggerBats()
-    const card = cards.find((c) => c.id === "symbol1")
+
+    const card = cards.find((c) => c.id === symbolId)
     if (card) setActiveCard(card)
   }
 
@@ -112,191 +113,183 @@ const SpiritBoard = function () {
                       src="/simpoli/1.png"
                       alt="Simbolo 1"
                       className={`symbol-img1 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol1")}
                     />
                   </div>
 
                   <div className="img2">
                     <img
                       src="/simpoli/2.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 2"
                       className={`symbol-img2 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol2")}
                     />
                   </div>
                   <div className="img3">
                     <img
                       src="/simpoli/3.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 3"
                       className={`symbol-img3 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol3")}
                     />
                   </div>
                   <div className="img4">
                     <img
                       src="/simpoli/4.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 4"
                       className={`symbol-img4 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol4")}
                     />
                   </div>
                   <div className="img5">
                     <img
                       src="/simpoli/5.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 5"
                       className={`symbol-img5 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol5")}
                     />
                   </div>
                   <div className="img6">
                     <img
                       src="/simpoli/6.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 6"
                       className={`symbol-img6 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol6")}
                     />
                   </div>
                   <div className="img7">
                     <img
                       src="/simpoli/7.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 7"
                       className={`symbol-img7 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol7")}
                     />
                   </div>
                   <div className="img8">
                     <img
                       src="/simpoli/8.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 8"
                       className={`symbol-img8 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol8")}
                     />
                   </div>
 
                   <div className="img9">
                     <img
                       src="/simpoli/9.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 9"
                       className={`symbol-img9 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol9")}
                     />
                   </div>
                   <div className="img10">
                     <img
                       src="/simpoli/10.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 10"
                       className={`symbol-img10 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol10")}
                     />
                   </div>
                   <div className="img11">
                     <img
                       src="/simpoli/11.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 11"
                       className={`symbol-img11 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol11")}
                     />
                   </div>
 
                   <div className="img12">
                     <img
                       src="/simpoli/12.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 12"
                       className={`symbol-img12 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol12")}
                     />
                   </div>
 
                   <div className="img13">
                     <img
                       src="/simpoli/13.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 13"
                       className={`symbol-img13 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol13")}
                     />
                   </div>
 
                   <div className="img14">
                     <img
                       src="/simpoli/14.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 14"
                       className={`symbol-img14 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol14")}
                     />
                   </div>
 
-                  <div className="img14">
-                    <img
-                      src="/simpoli/14.png"
-                      alt="Simbolo 1"
-                      className={`symbol-img14 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
-                    />
-                  </div>
                   <div className="img15">
                     <img
                       src="/simpoli/15.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 15"
                       className={`symbol-img15 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol15")}
                     />
                   </div>
                   <div className="img16">
                     <img
                       src="/simpoli/16.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 16"
                       className={`symbol-img16 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol16")}
                     />
                   </div>
 
                   <div className="img17">
                     <img
                       src="/simpoli/17.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 17"
                       className={`symbol-img17 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol17")}
                     />
                   </div>
                   <div className="img18">
                     <img
                       src="/simpoli/18.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 18"
                       className={`symbol-img18 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol18")}
                     />
                   </div>
                   <div className="img19">
                     <img
                       src="/simpoli/19.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 19"
                       className={`symbol-img19 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol19")}
                     />
                   </div>
                   <div className="img20">
                     <img
                       src="/simpoli/20.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 20"
                       className={`symbol-img20 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol20")}
                     />
                   </div>
 
                   <div className="img21">
                     <img
                       src="/simpoli/21.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 21"
                       className={`symbol-img21 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol21")}
                     />
                   </div>
                   <div className="img22">
                     <img
                       src="/simpoli/22.png"
-                      alt="Simbolo 1"
+                      alt="Simbolo 22"
                       className={`symbol-img22 ${clicked ? "clicked" : ""}`}
-                      onClick={handleClick}
+                      onClick={() => handleClick("symbol22")}
                     />
                   </div>
                 </div>

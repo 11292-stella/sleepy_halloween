@@ -1,14 +1,14 @@
 [
   {
     "id": "symbol1",
-    "title": "Pozione della Luna",
-    "description": "Risveglia i sogni e illumina le ombre.",
-    "image": "/sfondo.png"
+    "title": "La casa dei 1000 corpi (2003)",
+    "description": "L’inferno è vuoto, e tutti i diavoli sono qui.",
+    "image": "https://www.filmscoop.it/locandine/lacasadei1000corpi.jpg"
   },
   {
     "id": "symbol2",
-    "title": "Occhio del Corvo",
-    "description": "Vede ciò che è nascosto.",
-    "image": "/cards/raven-eye.png"
+    "title": "American Psycho (2000)",
+    "description": "Chiunque può uccidere, ma non tutti sanno farlo con stile.",
+    "image": "https://static.wikia.nocookie.net/horrormovies/images/8/82/American_Psycho_%282000%29.jpg/revision/latest?cb=20211211223748"
   }
 ]
