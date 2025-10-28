@@ -73,105 +73,139 @@
 .symbol-img1 {
   width: 75px;
   position: absolute;
-  top: 19%;
-  left: 59%;
+  top: 26%;
+  left: 60%;
 }
 
 .symbol-img2 {
   width: 75px;
   position: absolute;
-  top: 19%;
-  left: 59%;
+  top: 26%;
+  left: 50%;
 }
 .symbol-img3 {
   width: 75px;
   position: absolute;
-  top: 19%;
+  top: 12%;
   left: 50%;
 }
 .symbol-img4 {
   width: 75px;
   position: absolute;
-  top: 19%;
+  top: 12%;
   left: 41%;
 }
 .symbol-img5 {
   width: 75px;
   position: absolute;
-  top: 19%;
-  left: 32%;
+  top: 26%;
+  left: 40%;
 }
 .symbol-img6 {
   width: 75px;
   position: absolute;
-  top: 19%;
-  left: 23%;
+  top: 26%;
+  left: 30%;
 }
 .symbol-img7 {
   width: 75px;
   position: absolute;
-  top: 32%;
-  left: 15%;
+  top: 40%;
+  left: 18%;
 }
 .symbol-img8 {
   width: 75px;
   position: absolute;
-  top: 32%;
-  left: 24%;
+  top: 40%;
+  left: 28%;
 }
 .symbol-img9 {
   width: 75px;
   position: absolute;
-  top: 32%;
-  left: 33%;
+  top: 40%;
+  left: 38%;
 }
 .symbol-img10 {
   width: 75px;
   position: absolute;
-  top: 32%;
-  left: 42%;
+  top: 40%;
+  left: 48%;
 }
 .symbol-img11 {
   width: 75px;
   position: absolute;
-  top: 32%;
-  left: 51%;
+  top: 40%;
+  left: 58%;
 }
 .symbol-img12 {
   width: 75px;
   position: absolute;
-  top: 32%;
-  left: 60%;
+  top: 40%;
+  left: 68%;
 }
 .symbol-img13 {
   width: 75px;
   position: absolute;
-  top: 32%;
-  left: 69%;
+  top: 54%;
+  left: 72%;
 }
 .symbol-img14 {
   width: 75px;
   position: absolute;
-  top: 45%;
-  left: 75%;
+  top: 54%;
+  left: 62%;
 }
 .symbol-img15 {
   width: 75px;
   position: absolute;
-  top: 45%;
-  left: 66%;
+  top: 54%;
+  left: 52%;
 }
 .symbol-img16 {
   width: 75px;
   position: absolute;
-  top: 45%;
-  left: 57%;
+  top: 54%;
+  left: 42%;
 }
 .symbol-img17 {
   width: 75px;
   position: absolute;
-  top: 45%;
-  left: 48%;
+  top: 54%;
+  left: 32%;
+}
+.symbol-img18 {
+  width: 75px;
+  position: absolute;
+  top: 54%;
+  left: 22%;
+}
+
+.symbol-img19 {
+  width: 75px;
+  position: absolute;
+  top: 68%;
+  left: 30%;
+}
+
+.symbol-img20 {
+  width: 75px;
+  position: absolute;
+  top: 68%;
+  left: 40%;
+}
+
+.symbol-img21 {
+  width: 75px;
+  position: absolute;
+  top: 68%;
+  left: 50%;
+}
+
+.symbol-img22 {
+  width: 75px;
+  position: absolute;
+  top: 68%;
+  left: 60%;
 }
 
 /* Stili comuni */
@@ -271,78 +305,107 @@
 
   /* Riga superiore (più vicina al bordo alto della tavola) */
   .symbol-img1 {
-    top: 16%;
+    top: 14%;
     left: 18%;
   }
   .symbol-img2 {
-    top: 16%;
+    top: 14%;
     left: 29%;
   }
   .symbol-img3 {
-    top: 16%;
+    top: 14%;
     left: 41%;
   }
   .symbol-img4 {
-    top: 16%;
+    top: 14%;
     left: 53%;
   }
   .symbol-img5 {
-    top: 16%;
+    top: 14%;
     left: 66%;
   }
+  /*seconda riga*/
   .symbol-img6 {
-    top: 33%;
+    top: 31%;
     left: 10%;
   }
 
   .symbol-img8 {
-    top: 33%;
+    top: 31%;
     left: 22%;
-  }
-  .symbol-img7 {
-    top: 51%;
-    left: 15%;
   }
 
   .symbol-img9 {
-    top: 33%;
+    top: 31%;
     left: 34%;
   }
   .symbol-img10 {
-    top: 33%;
+    top: 31%;
     left: 46%;
   }
   .symbol-img11 {
-    top: 33%;
+    top: 31%;
     left: 58%;
-  }
-
-  /* Riga centrale bassa */
-  .symbol-img12 {
-    top: 33%;
-    left: 70%;
-  }
-  .symbol-img13 {
-    top: 41%;
-    left: 38%;
-  }
-  .symbol-img14 {
-    top: 51%;
-    left: 33%;
   }
   .symbol-img15 {
-    top: 41%;
+    top: 31%;
     left: 70%;
   }
 
-  /* Riga inferiore */
+  /*seconda riga*/
+
+  /* Riga centrale bassa */
+
+  .symbol-img7 {
+    top: 49%;
+    left: 10%;
+  }
+
+  .symbol-img12 {
+    top: 49%;
+    left: 73%;
+  }
+  .symbol-img13 {
+    top: 49%;
+    left: 22%;
+  }
+  .symbol-img14 {
+    top: 49%;
+    left: 35%;
+  }
+
   .symbol-img16 {
-    top: 56%;
-    left: 40%;
+    top: 49%;
+    left: 48%;
   }
   .symbol-img17 {
-    top: 56%;
-    left: 58%;
+    top: 49%;
+    left: 61%;
+  }
+
+  /*ultima riga*/
+  .symbol-img18 {
+    top: 66%;
+    left: 68%;
+  }
+
+  .symbol-img19 {
+    top: 66%;
+    left: 56%;
+  }
+
+  .symbol-img20 {
+    top: 66%;
+    left: 43%;
+  }
+
+  .symbol-img21 {
+    top: 66%;
+    left: 31%;
+  }
+  .symbol-img22 {
+    top: 66%;
+    left: 19%;
   }
 }
 

@@ -258,6 +258,47 @@ const SpiritBoard = function () {
                       onClick={handleClick}
                     />
                   </div>
+                  <div className="img18">
+                    <img
+                      src="/simpoli/18.png"
+                      alt="Simbolo 1"
+                      className={`symbol-img18 ${clicked ? "clicked" : ""}`}
+                      onClick={handleClick}
+                    />
+                  </div>
+                  <div className="img19">
+                    <img
+                      src="/simpoli/19.png"
+                      alt="Simbolo 1"
+                      className={`symbol-img19 ${clicked ? "clicked" : ""}`}
+                      onClick={handleClick}
+                    />
+                  </div>
+                  <div className="img20">
+                    <img
+                      src="/simpoli/20.png"
+                      alt="Simbolo 1"
+                      className={`symbol-img20 ${clicked ? "clicked" : ""}`}
+                      onClick={handleClick}
+                    />
+                  </div>
+
+                  <div className="img21">
+                    <img
+                      src="/simpoli/21.png"
+                      alt="Simbolo 1"
+                      className={`symbol-img21 ${clicked ? "clicked" : ""}`}
+                      onClick={handleClick}
+                    />
+                  </div>
+                  <div className="img22">
+                    <img
+                      src="/simpoli/22.png"
+                      alt="Simbolo 1"
+                      className={`symbol-img22 ${clicked ? "clicked" : ""}`}
+                      onClick={handleClick}
+                    />
+                  </div>
                 </div>
               </Col>
             </Row>
