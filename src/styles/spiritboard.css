@@ -17,7 +17,7 @@
   letter-spacing: 2px;
   margin-bottom: 0.4rem;
   margin-top: 1rem;
-  animation: flicker 2s infinite;
+  animation: flicker 2s infinite alternate;
   text-align: center;
 }
 
@@ -37,20 +37,20 @@
 
 @keyframes flicker {
   0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
   100% {
     opacity: 1;
+    text-shadow: 0 0 7px #f16b1d, 0 0 20px #f16b1d;
   }
-  45% {
-    opacity: 0.85;
-  }
-  50% {
-    opacity: 0.6;
-  }
+  20%,
+  24%,
   55% {
-    opacity: 0.85;
-  }
-  60% {
-    opacity: 0.95;
+    opacity: 0.8;
+    text-shadow: none;
   }
 }
 
@@ -71,141 +71,141 @@
 }
 
 .symbol-img1 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 26%;
-  left: 60%;
+  top: 17%;
+  left: 66%;
 }
 
 .symbol-img2 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 26%;
-  left: 50%;
+  top: 17%;
+  left: 55%;
 }
 .symbol-img3 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 12%;
-  left: 50%;
+  top: 17%;
+  left: 44%;
 }
 .symbol-img4 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 12%;
-  left: 41%;
+  top: 17%;
+  left: 33%;
 }
 .symbol-img5 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 26%;
-  left: 40%;
+  top: 17%;
+  left: 22%;
 }
 .symbol-img6 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 26%;
-  left: 30%;
+  top: 32%;
+  left: 13%;
 }
 .symbol-img7 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 40%;
-  left: 18%;
+  top: 32%;
+  left: 24%;
 }
 .symbol-img8 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 40%;
-  left: 28%;
+  top: 32%;
+  left: 35%;
 }
 .symbol-img9 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 40%;
-  left: 38%;
+  top: 32%;
+  left: 46%;
 }
 .symbol-img10 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 40%;
-  left: 48%;
+  top: 32%;
+  left: 57%;
 }
 .symbol-img11 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 40%;
-  left: 58%;
-}
-.symbol-img12 {
-  width: 75px;
-  position: absolute;
-  top: 40%;
+  top: 32%;
   left: 68%;
 }
-.symbol-img13 {
-  width: 75px;
+.symbol-img12 {
+  width: 82px;
   position: absolute;
-  top: 54%;
-  left: 72%;
+  top: 48%;
+  left: 13%;
+}
+.symbol-img13 {
+  width: 82px;
+  position: absolute;
+  top: 48%;
+  left: 24%;
 }
 .symbol-img14 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 54%;
-  left: 62%;
+  top: 48%;
+  left: 35%;
 }
 .symbol-img15 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 54%;
-  left: 52%;
+  top: 48%;
+  left: 46%;
 }
 .symbol-img16 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 54%;
-  left: 42%;
+  top: 48%;
+  left: 57%;
 }
 .symbol-img17 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 54%;
-  left: 32%;
+  top: 48%;
+  left: 68%;
 }
 .symbol-img18 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 54%;
+  top: 65%;
   left: 22%;
 }
 
 .symbol-img19 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 68%;
-  left: 30%;
+  top: 65%;
+  left: 33%;
 }
 
 .symbol-img20 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 68%;
-  left: 40%;
+  top: 65%;
+  left: 44%;
 }
 
 .symbol-img21 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 68%;
-  left: 50%;
+  top: 65%;
+  left: 55%;
 }
 
 .symbol-img22 {
-  width: 75px;
+  width: 82px;
   position: absolute;
-  top: 68%;
-  left: 60%;
+  top: 65%;
+  left: 66%;
 }
 
 /* Stili comuni */
@@ -225,73 +225,109 @@
     width: 55px;
   }
 
+  /* Riga superiore (più vicina al bordo alto della tavola) */
   .symbol-img1 {
-    top: 18%;
-    left: 70%;
+    top: 14%;
+    left: 18%;
   }
   .symbol-img2 {
-    top: 19%;
-    left: 60%;
+    top: 14%;
+    left: 29%;
   }
   .symbol-img3 {
-    top: 18%;
-    left: 50%;
+    top: 14%;
+    left: 41%;
   }
   .symbol-img4 {
-    top: 18%;
-    left: 40%;
+    top: 14%;
+    left: 53%;
   }
   .symbol-img5 {
-    top: 18%;
-    left: 30%;
+    top: 14%;
+    left: 66%;
   }
+  /*seconda riga*/
   .symbol-img6 {
-    top: 18%;
-    left: 20%;
+    top: 31%;
+    left: 10%;
   }
-  .symbol-img7 {
-    top: 30%;
-    left: 15%;
-  }
+
   .symbol-img8 {
-    top: 30%;
-    left: 25%;
+    top: 31%;
+    left: 22%;
   }
+
   .symbol-img9 {
-    top: 30%;
-    left: 35%;
+    top: 31%;
+    left: 34%;
   }
   .symbol-img10 {
-    top: 30%;
-    left: 45%;
+    top: 31%;
+    left: 46%;
   }
   .symbol-img11 {
-    top: 30%;
-    left: 55%;
-  }
-  .symbol-img12 {
-    top: 30%;
-    left: 65%;
-  }
-  .symbol-img13 {
-    top: 30%;
-    left: 75%;
-  }
-  .symbol-img14 {
-    top: 44%;
-    left: 70%;
+    top: 31%;
+    left: 58%;
   }
   .symbol-img15 {
-    top: 44%;
-    left: 60%;
+    top: 31%;
+    left: 70%;
   }
+
+  /*seconda riga*/
+
+  /* Riga centrale bassa */
+
+  .symbol-img7 {
+    top: 49%;
+    left: 10%;
+  }
+
+  .symbol-img12 {
+    top: 49%;
+    left: 73%;
+  }
+  .symbol-img13 {
+    top: 49%;
+    left: 22%;
+  }
+  .symbol-img14 {
+    top: 49%;
+    left: 35%;
+  }
+
   .symbol-img16 {
-    top: 44%;
-    left: 50%;
+    top: 49%;
+    left: 48%;
   }
   .symbol-img17 {
-    top: 44%;
-    left: 40%;
+    top: 49%;
+    left: 61%;
+  }
+
+  /*ultima riga*/
+  .symbol-img18 {
+    top: 66%;
+    left: 68%;
+  }
+
+  .symbol-img19 {
+    top: 66%;
+    left: 56%;
+  }
+
+  .symbol-img20 {
+    top: 66%;
+    left: 43%;
+  }
+
+  .symbol-img21 {
+    top: 66%;
+    left: 31%;
+  }
+  .symbol-img22 {
+    top: 66%;
+    left: 19%;
   }
 }
 
@@ -436,61 +472,37 @@
   }
 }
 
-/* Pipistrelli */
-.bats {
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 999;
+.card-custom {
+  background-color: rgba(30, 0, 40, 0.9);
+  color: #e0e0e0;
+  border: 3px solid #f16b1d;
+
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4), 0 0 40px rgba(100, 0, 150, 0.7);
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  border-radius: 15px;
+
+  z-index: 4;
 }
 
-.bat {
-  position: absolute;
-  width: 50px;
-  opacity: 0;
-}
-
-.bat1 {
-  top: 60%;
-  left: 50%;
-}
-.bat2 {
-  top: 57%;
-  left: 55%;
-}
-.bat3 {
-  top: 57%;
-  left: 45%;
-}
-
-.fly {
-  animation: fly 3s ease-in-out forwards;
-}
-
-@keyframes fly {
-  0% {
-    transform: translate(0, 0) scale(1);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-300px, -200px) scale(1.5) rotate(-45deg);
-    opacity: 0;
-  }
-}
-
-/* Card */
 .card.bg-dark {
+  position: relative;
   background-image: url("/sf.jpg");
   background-size: cover;
-  box-shadow: 0 0 20px rgba(49, 2, 75, 0.6);
-  animation: fadeIn 0.5s ease;
+
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.3), 0 0 10px rgba(49, 2, 75, 0.6);
+  animation: fadeIn 0.5s ease, shudder-shadow 2s infinite alternate;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .card-title {
@@ -513,20 +525,95 @@
 }
 
 .spirit-card-overlay {
-  position: absolute;
-  top: 58%;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 9999;
+  z-index: 10;
   width: 100%;
+  max-width: 450px;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   pointer-events: none;
 }
 
 .spirit-card-overlay .card {
-  width: 20rem;
+  width: 100%;
   pointer-events: auto;
+}
+
+/* ------------------------------------------- */
+/* SEZIONE PIPISTRELLI (BAT ANIMATION) */
+/* ------------------------------------------- */
+
+/* 🦇 Pipistrelli  */
+.bats {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.bat {
+  position: absolute;
+  width: 60px;
+  opacity: 0;
+}
+
+.bat1 {
+  top: 60%;
+  left: 50%;
+}
+.bat2 {
+  top: 57%;
+  left: 55%;
+}
+.bat3 {
+  top: 57%;
+  left: 45%;
+}
+
+.bat.fly {
+  animation: fly-out 3s ease-in-out forwards;
+}
+
+@keyframes fly-out {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(-300px, -200px) scale(0.8) rotate(-45deg);
+    opacity: 0;
+  }
+}
+
+.bat2.fly {
+  animation: fly-out-alt 3s ease-in-out forwards;
+}
+
+@keyframes fly-out-alt {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(300px, -200px) scale(0.8) rotate(45deg);
+    opacity: 0;
+  }
 }
 
 @keyframes fadeIn {

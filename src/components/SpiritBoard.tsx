@@ -72,21 +72,32 @@ const SpiritBoard = function () {
                   venire i brividi!
                 </p>
 
-                {/* Card dinamica sopra la tavola */}
                 {activeCard && (
                   <div className="spirit-card-overlay">
                     <Card
-                      className="text-light bg-dark  shadow mt-3"
-                      style={{ width: "20rem" }}
+                      className="text-light bg-dark card-custom spooky-card shadow mt-3"
+                      style={{
+                        width: "20rem",
+                        position: "relative",
+                        zIndex: 4,
+                      }}
                     >
+                      {/* Immagine della carta */}
                       <Card.Img
                         variant="top"
                         src={activeCard.image}
                         alt={activeCard.title}
+                        className="card-img"
                       />
+
+                      {/* Corpo della carta */}
                       <Card.Body>
-                        <Card.Title>{activeCard.title}</Card.Title>
-                        <Card.Text>{activeCard.description}</Card.Text>
+                        <Card.Title className="flicker-text">
+                          {activeCard.title}
+                        </Card.Title>
+                        <Card.Text className="whisper-text">
+                          {activeCard.description}
+                        </Card.Text>
                         <div className="d-flex justify-content-end">
                           <Button
                             variant="outline-light"
@@ -96,6 +107,11 @@ const SpiritBoard = function () {
                           </Button>
                         </div>
                       </Card.Body>
+
+                      {/* Effetti decorativi - spostati sotto per essere sopra tutto */}
+                      <div className="fog-border"></div>
+                      <div className="web web-top-left"></div>
+                      <div className="web web-bottom-right"></div>
                     </Card>
                   </div>
                 )}
