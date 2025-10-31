@@ -75,7 +75,7 @@ const SpiritBoard = function () {
                 {activeCard && (
                   <div className="spirit-card-overlay">
                     <Card
-                      className="text-light bg-dark card-custom spooky-card shadow mt-3"
+                      className="text-light bg-dark card-custom "
                       style={{
                         width: "20rem",
                         position: "relative",
