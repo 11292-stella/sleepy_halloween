@@ -3,12 +3,132 @@
     "id": "symbol1",
     "title": "La casa dei 1000 corpi (2003)",
     "description": "L’inferno è vuoto, e tutti i diavoli sono qui.",
-    "image": "https://www.filmscoop.it/locandine/lacasadei1000corpi.jpg"
+    "image": "https://play-lh.googleusercontent.com/FH3WCfovDxNJgbQx2Q6aqaXOQMtVCOtwxDV3-I7a62uT7aB4VrSNGyGBmAIlE60ARwnKOIktK-2j9-zqLztn=w240-h480-rw"
   },
   {
     "id": "symbol2",
     "title": "American Psycho (2000)",
     "description": "Chiunque può uccidere, ma non tutti sanno farlo con stile.",
-    "image": "https://static.wikia.nocookie.net/horrormovies/images/8/82/American_Psycho_%282000%29.jpg/revision/latest?cb=20211211223748"
+    "image": "https://ntvb.tmsimg.com/assets/p24116_v_h10_ax.jpg?w=1280&h=720"
+  },
+  {
+    "id": "symbol3",
+    "title": "Shining (1980)",
+    "description": "Wendy, luce della mia vita... Dammi la mazza. Ti spaccherò la testa in due!",
+    "image": "https://ilcinegico.com/wp-content/uploads/2024/12/00d56-image_editor_output_image1160782541-1657109741472.jpg"
+  },
+  {
+    "id": "symbol4",
+    "title": "L'esorcista (1973)",
+    "description": "Qualcosa oltre ogni comprensione sta accadendo a una ragazza in questa strada, in questa casa... e un uomo è stato mandato come ultimo rimedio. Quell'uomo è l'esorcista.",
+    "image": "https://pad.mymovies.it/filmclub/2006/03/527/coverapp.jpg"
+  },
+  {
+    "id": "symbol5",
+    "title": "Nightmare - Dal profondo della notte (1984)",
+    "description": "Uno, due, Freddy viene per te, Tre, quattro, chiudi la porta o scappa il gatto, Cinque, sei, il crocifisso tieni stretto, Sette, otto, non andremo a letto, Nove, dieci, non dormirai più!",
+    "image": "https://beyondthehorrorblog.altervista.org/wp-content/uploads/2024/09/night-social.jpg"
+  },
+  {
+    "id": "symbol6",
+    "title": "The Devil’s Advocate (1997)",
+    "description": "La vanità… decisamente il mio peccato preferito.",
+    "image": "https://m.media-amazon.com/images/S/pv-target-images/4cfb03fe5f7e88d097285f2882252e3cadb13dd5710824df2e473ce07a90697a.jpg"
+  },
+  {
+    "id": "symbol7",
+    "title": "It (2017)",
+    "description": "Galleggiano tutti, quaggiù.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqDm4mkeXabp_rDP1wp8GiSiv0tbtIPNNNh3JeD_fsj7tJHkuYaIsz0K62vw7EAsTst9Q&usqp=CAU"
+  },
+  {
+    "id": "symbol8",
+    "title": "Scream (1996)",
+    "description": "Qual è il tuo film horror preferito?",
+    "image": "https://m.media-amazon.com/images/I/41003ngClfL._AC_UF894,1000_QL80_.jpg"
+  },
+  {
+    "id": "symbol9",
+    "title": "The Ring (2002)",
+    "description": "Tra sette giorni morirai.",
+    "image": "https://thelivingnews.it/wp-content/uploads/2020/08/the-ring_800x600-768x576.jpg"
+  },
+  {
+    "id": "symbol10",
+    "title": "La Cosa (The Thing)",
+    "description": "Non è umano… e non vuole esserlo.",
+    "image": "https://i.ytimg.com/vi/hrUaSVXtvP4/sddefault.jpg"
+  },
+  {
+    "id": "symbol11",
+    "title": "Misery non deve morire (1990)",
+    "description": "Sono la tua fan numero uno.",
+    "image": "https://www.appiapolis.it/wp-content/uploads/2019/07/cropped-misery-5a1d1238335dc.jpg"
+  },
+  {
+    "id": "symbol12",
+    "title": "The Mist (2007)",
+    "description": "Il vero orrore è ciò che le persone fanno quando hanno paura.",
+    "image": "https://cameronmoviesandtv.wordpress.com/wp-content/uploads/2016/10/the-mist.jpg?w=640"
+  },
+  {
+    "id": "symbol13",
+    "title": "Dracula di Bram Stoker (1992)",
+    "description": "Ho attraversato oceani di tempo per trovarti.",
+    "image": "https://www.zonadelujo.com/wp-content/uploads/2021/01/dracula-de-bram-stoker-1992-poster.jpg"
+  },
+  {
+    "id": "symbol14",
+    "title": "Pet Sematary (1989)",
+    "description": "A volte è meglio che i morti restino morti.",
+    "image": "https://thumbnails.cbsig.net/CBS_Production_Entertainment_VMS/2019/06/12/1535971395903/PETS1_SAlone_16_9_1920x1080_2751915_1920x1080.jpg"
+  },
+  {
+    "id": "symbol15",
+    "title": "Intervista col vampiro (1994)",
+    "description": "Ti darò la scelta che a me non fu mai data.",
+    "image": "https://pad.mymovies.it/filmclub/2006/03/249/locandina.jpg"
+  },
+  {
+    "id": "symbol16",
+    "title": "La regina dei dannati (2001)",
+    "description": "Svelatevi svelatevi ovunque voi siate...",
+    "image": "https://thumb.prod.front.tim.cptech.pro/http/unsafe/1440x810/filters:quality(80)/voddashhttps.cb.ticdn.it/videoteca2/V3/Film/2014/03/50400256/IMAGES/220921061028/T_50400256___NL___BG_HIGH.jpg"
+  },
+  {
+    "id": "symbol17",
+    "title": "Il seme della follia (1994)",
+    "description": "La realtà è solo una storia che ci raccontiamo.",
+    "image": "https://i.ytimg.com/vi/VixHsirgQw0/maxresdefault.jpg"
+  },
+  {
+    "id": "symbol18",
+    "title": "Nosferatu (2024)",
+    "description": "La mia fame non conosce pietà.",
+    "image": "https://substackcdn.com/image/fetch/$s_!rZVQ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0680087e-02ad-44ef-88d1-216a8758d86d_960x540.jpeg"
+  },
+  {
+    "id": "symbol19",
+    "title": "Jacob’s Ladder (1990)",
+    "description": "Non siamo soli, e non sempre lo capiamo subito.",
+    "image": "https://lionsgatelimited.com/cdn/shop/files/Jacob_s-Ladder-Product-Shots-1536x1920px_0009_Layer-11.webp?v=1756927602"
+  },
+  {
+    "id": "symbol20",
+    "title": "1408 (2007)",
+    "description": "Quante persone hanno dormito in quel letto prima di te? Quante di loro sono impazzite? Quante sono morte?",
+    "image": "https://club-stephenking.fr/wp-content/uploads/2018/08/film-stephenking-chambre1408.jpg"
+  },
+  {
+    "id": "symbol21",
+    "title": "La Casa (Evil Dead)",
+    "description": "Klaatu Verata Nectu",
+    "image": "https://m.media-amazon.com/images/M/MV5BNGY5MTQ5NGItMDQ3Zi00MGRhLWI2NjktMjliZTRhZjA1YTZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "id": "symbol22",
+    "title": "Silent Hill (2006)",
+    "description": "Il dolore e la paura si trasformano in odio… e l’odio cambia il mondo.",
+    "image": "https://www.gamespot.com/a/uploads/scale_medium/1582/15828986/3643418-0%20hed.jpg"
   }
 ]

@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+
+body,
+html {
+  margin: 0;
+
+  padding: 0;
+
+  height: 100%;
+
+  background-color: #000000;
+}
+
+#root,
+.app-container {
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}
+
 .page-background {
   background-image: url("/sfondo.png");
   background-size: cover;
@@ -472,65 +491,32 @@
   }
 }
 
+/* ================================================================= */
+/* 🎴 STILI PRINCIPALI DELLA CARD (.card-custom) */
+/* ================================================================= */
 .card-custom {
-  /* ... (Stili esistenti) ... */
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
 
-  /* === MODIFICA QUI: Aggiungi un margine superiore per spostare la card in basso === */
-  margin-top: 100px; /* <--- REGOLA questo valore (es. 80px, 120px) in base all'altezza della tua Nav Bar */
-  /* === FINE MODIFICA === */
+  margin-top: 90px;
 
-  /* Sfondo scuro e semi-trasparente come nell'immagine */
   background-color: rgba(30, 0, 40, 0.9);
-  /* Colore testo principale */
   color: #e0e0e0;
-
-  /* Cornice: l'immagine ha una cornice con un forte glow neon */
-  border: 3px solid transparent; /* Bordi invisibili, useremo box-shadow per il glow */
+  border: 3px solid transparent;
   border-radius: 15px;
 
-  /* Posizionamento e z-index per effetti */
   position: relative;
   z-index: 4;
-  overflow: hidden; /* Nascondiamo la parte dello sfondo che non serve */
-
-  /* Animazione e Transizioni */
+  overflow: hidden;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-}
-/* --- Sfondo Pattern Teschi (Aggiunto per fedeltà all'immagine) --- */
-/* Simula lo sfondo con i teschi ripetuti (dovrai usare una tua immagine) */
-.card-custom::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* Usa un'immagine pattern di teschi viola scuro o crea un gradient/SVG */
-  background-image: url("skull-pattern.png");
-  /* Sostituisci con il tuo pattern */
-  background-repeat: no-repeat;
-  background-size: 500px;
-  background-position: center; /* Regola la dimensione del pattern */
-  /* Leggera opacità per il pattern */
-  z-index: -1; /* Posizioniamo il pattern sotto il contenuto */
-  filter: brightness(0.8);
-}
 
-/* --- Glow al Neon della Cornice (Riveduto per l'effetto viola/arancione) --- */
-.card-custom {
-  /* Il box-shadow primario crea il forte effetto neon (viola/fucsia e arancione) */
-  box-shadow: 
-        /* Glow interno (arancione/rosso) */ inset 0 0 10px
-      rgba(255, 100, 0, 0.4),
-    /* Glow esterno Fucsia/Viola (dominante) */ 0 0 15px #802dc1,
-    0 0 30px #802dc1,
-    /* Glow esterno Arancione/Rosso (secondario) */ 0 0 10px #f16b1d,
-    0 0 20px #f16b1d;
+  box-shadow: inset 0 0 10px rgba(255, 100, 0, 0.4), 0 0 15px #802dc1,
+    0 0 30px #802dc1, 0 0 10px #f16b1d, 0 0 20px #f16b1d;
 
   animation: card-glow 4s ease-in-out infinite;
 }
 
-/* Animazione del Glow */
 @keyframes card-glow {
   0%,
   100% {
@@ -539,43 +525,82 @@
   }
   50% {
     box-shadow: inset 0 0 20px rgba(255, 120, 0, 0.6), 0 0 25px #c14dff,
-      0 0 50px #c14dff, /* Più intenso */ 0 0 15px #ff8c42, 0 0 30px #ff8c42; /* Più intenso */
+      0 0 50px #c14dff, 0 0 15px #ff8c42, 0 0 30px #ff8c42;
   }
 }
 
-/* --- Stili Elementi Interni --- */
+.card-custom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("skull-pattern.png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(0.8);
+}
 
-/* 🎃 Testo Titolo "HAPPY HALLOWEEN" (Arancione acceso) */
+.card-custom::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("web.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* ================================================================= */
+/* 🖼️ STILI IMMAGINE (Compattata Verticalmente) */
+/* ================================================================= */
+.card-custom .card-img {
+  width: 85%;
+
+  max-height: 180px;
+  object-fit: cover;
+  display: block;
+
+  margin: 20px auto 5px auto;
+
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 20px rgba(128, 45, 193, 0.4);
+}
+
+/* ================================================================= */
+/* ✒️ STILI TESTO (Horror) */
+/* ================================================================= */
+
+/* 🎃 Titolo */
 .card-custom .card-title {
-  /* Utilizza font adatti come "Creepster" o "Bebas Neue" per l'impatto */
   font-family: "Creepster", cursive;
-  font-size: 2.2rem; /* Aumentato per l'impatto */
-  color: #f16b1d; /* Arancione della zucca */
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
-    /* Leggera luce */ 0 0 10px #ff4500,
-    /* Glow arancione/rosso */ 0 0 20px rgba(255, 69, 0, 0.7);
-  animation: none; /* Rimosso 'flicker' per il titolo principale se vuoi un testo fisso come nell'immagine */
+  font-size: 2.2rem;
+  color: #f16b1d;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px #ff4500,
+    0 0 20px rgba(255, 69, 0, 0.7);
+  animation: none;
   text-align: center;
   margin-top: 10px;
 }
 
-/* 🦇 Testo Descrizione (Bianco/Grigio chiaro) */
+/* 🦇 Testo Descrizione */
 .card-custom .card-text {
-  /* Nuovo font più inquietante */
   font-family: "Creepster", "Courier New", monospace;
-  font-size: 1.1rem; /* Leggermente più grande per leggibilità */
-
-  /* Colore pallido e malato (bianco sporco/verde pallido) */
+  font-size: 1.1rem;
   color: #c0f4c0;
-
   text-align: center;
   padding: 0 10px;
-
-  /* Effetto sdoppiamento/ombra spettrale */
-  text-shadow: 0 0 1px #802dc1,
-    /* Ombra viola/fucsia del glow */ 1px 1px 0 rgba(0, 0, 0, 0.5);
-
-  /* Nuova animazione di tremolio */
+  text-shadow: 0 0 1px #802dc1, 1px 1px 0 rgba(0, 0, 0, 0.5);
   animation: shiver 0.3s infinite alternate;
 }
 
@@ -591,13 +616,43 @@
   }
 }
 
-/* --- Ombre esterne (Pipistrelli e Glow sotto la Card) --- */
-/* Questa parte richiede un elemento HTML separato o l'uso del body/container */
+/* ================================================================= */
+/* 🔘 STILI BOTTONE (Centrato in basso) */
+/* ================================================================= */
+.card-custom .btn-chiudi-halloween {
+  /* Margini ridotti */
+  margin-top: 10px;
+  margin-bottom: 10px;
 
+  /* Aspetto */
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+
+  /* Colori e Glow */
+  background-color: #f16b1d;
+  color: #300040;
+  border: 2px solid #ffaa00;
+  box-shadow: 0 0 8px #ff8c00, 0 0 15px rgba(128, 45, 193, 0.6);
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+/* Hover del bottone */
+.card-custom .btn-chiudi-halloween:hover {
+  background-color: rgb(80, 8, 118);
+  color: white;
+  border-color: rgb(70, 3, 95);
+  box-shadow: 0 0 15px #c14dff, 0 0 25px #ff8c00;
+  transform: scale(1.05);
+}
+
+/* --- Ombra Esterna (Glow sul pavimento) --- */
 .card-container-wrapper {
-  /* Wrapper per centrare e creare l'ombra sotto */
   position: relative;
-  padding-bottom: 50px; /* Spazio per l'ombra */
+  padding-bottom: 50px;
 }
 
 .card-container-wrapper::after {
@@ -608,66 +663,9 @@
   right: 10%;
   height: 40px;
   border-radius: 50%;
-  /* L'ombra/glow viola sul pavimento */
   box-shadow: 0 0 35px 20px #802dc1;
   z-index: 1;
   opacity: 0.6;
-}
-.card-custom::after {
-  content: "";
-  position: absolute;
-  /* Copri l'intera area della card */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  /* Immagine di ragnatela angolare (usa la tua immagine "web.png" qui) */
-  background-image: url("web.png");
-
-  /* Impostazioni chiave per l'incorniciatura: */
-
-  /* 1. Non ripetere il pattern: */
-  background-repeat: no-repeat;
-
-  /* 2. Scala l'immagine per coprire l'intera area, mantenendo le proporzioni: */
-  background-size: cover;
-
-  /* 3. Assicurati che l'immagine sia posizionata in modo da centrare o allineare gli angoli: */
-  background-position: center center;
-
-  /* Colore e visibilità */
-  opacity: 0.5; /* Rendi la ragnatela semitrasparente */
-  pointer-events: none; /* Permette di cliccare gli elementi della card */
-  z-index: 5;
-}
-
-/* 🖼️ Stili per l'Immagine (Zucca/Fantasma, che nell'HTML andrebbe prima del testo) */
-.card-custom .card-img {
-  width: 90%;
-  max-height: 250px;
-  object-fit: cover;
-  display: block;
-  margin: 30px auto 10px auto;
-
-  /* === MODIFICHE PER STONDATURA E EFFETTO === */
-  border-radius: 20px; /* Aumentato per una curvatura più visibile */
-
-  /* Aggiungiamo un leggero glow o un'ombra interna per l'effetto "spettrale" */
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
-    /* Leggera luce bianca */ 0 0 20px rgba(128, 45, 193, 0.4); /* Glow viola chiaro */
-
-  /* Rimuovi il filter: drop-shadow precedente se usi box-shadow per evitare sovrapposizioni */
-  /* Se vuoi un effetto più sfumato e meno "duro" del box-shadow, puoi usare solo questo: */
-  /* filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4)) 
-              drop-shadow(0 0 15px rgba(128, 45, 193, 0.5)); */
-  /* ========================================= */
-}
-
-.btn-outline-light:hover {
-  background-color: rgb(80, 8, 118);
-  color: white;
-  border-color: rgb(70, 3, 95);
 }
 
 .spirit-card-overlay {

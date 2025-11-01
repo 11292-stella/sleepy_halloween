@@ -2,6 +2,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap"
 import { useState } from "react"
 import "../styles/spiritboard.css"
 import cards from "../cards.json"
+import "../styles/navbar.css"
 
 const SpiritBoard = function () {
   const [clicked, setClicked] = useState(false)
@@ -98,9 +99,10 @@ const SpiritBoard = function () {
                         <Card.Text className="whisper-text">
                           {activeCard.description}
                         </Card.Text>
-                        <div className="d-flex justify-content-end">
+                        <div className="d-flex justify-content-center">
                           <Button
                             variant="outline-light"
+                            className="btn-chiudi-halloween" // Aggiungi la classe qui
                             onClick={() => setActiveCard(null)}
                           >
                             Chiudi
