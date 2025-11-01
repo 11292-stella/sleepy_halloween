@@ -536,7 +536,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("skull-pattern.png");
+  background-image: url("/skull-pattern.png");
   background-repeat: no-repeat;
   background-size: 500px;
   background-position: center;
@@ -551,7 +551,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("web.png");
+  background-image: url("/web.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
